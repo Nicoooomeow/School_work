@@ -1,0 +1,200 @@
+TEST 1 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(32); initial_hour(1, dial)'
+hidden🃝  hidden🂴  hidden🂳  hidden🃉
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(43); initial_hour(4, dial)'
+hidden🂭  hidden🂺  hidden🂢  hidden🂨
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(54); initial_hour(5, dial)'
+hidden🂪  hidden🃑  hidden🂴  hidden🂭
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(65); initial_hour(6, dial)'
+hidden🃗  hidden🃈  hidden🃓  hidden🂸
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(76); initial_hour(9, dial)'
+hidden🃝  hidden🂺  hidden🂽  hidden🃇
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(87); initial_hour(12, dial)'
+hidden🃆  hidden🂡  hidden🃍  hidden🂩
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(88); hour_after_playing_from_beginning_for_at_most(8, 1, dial, centre)' 
+🃎  hidden🂻  hidden🃗  hidden🃈  hidden🃑
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(88); hour_after_playing_from_beginning_for_at_most(8, 2, dial, centre)'
+🃘  hidden🂻  hidden🃗  hidden🃈  hidden🃑
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(88); hour_after_playing_from_beginning_for_at_most(8, 3, dial, centre)'
+🃑  🃘  hidden🂻  hidden🃗  hidden🃈
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(99); hour_after_playing_from_beginning_for_at_most(5, 1, dial, centre)'
+🃎  hidden🃅  hidden🂻  hidden🃕  hidden🃖
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(99); hour_after_playing_from_beginning_for_at_most(5, 2, dial, centre)'
+🂥  hidden🃅  hidden🂻  hidden🃕  hidden🃖
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(99); hour_after_playing_from_beginning_for_at_most(5, 3, dial, centre)'
+🃖  🂥  hidden🃅  hidden🂻  hidden🃕
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(1, 38, dial, centre)'
+🃎  🃑  🂱  🃁  hidden🃅
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(2, 38, dial, centre)'
+🃎  🃒  🃂  hidden🂩  hidden🂶
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(3, 38, dial, centre)'
+🃎  🂣  🃃  🂳  🃓
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(4, 38, dial, centre)'
+🃎  🃄  🃔  🂤  🂴
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(5, 38, dial, centre)'
+🃎  🃕  hidden🂥  hidden🂲  hidden🃙
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(6, 38, dial, centre)'
+🃎  🃖  🃆  hidden🃘  hidden🂧
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(7, 38, dial, centre)'
+🃎  🃗  🃇  🂷  hidden🂢
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(8, 38, dial, centre)'
+🃎  🂸  🂨  🃈  hidden🃊
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(9, 38, dial, centre)'
+🃎  🃉  🂹  hidden🂭  hidden🂦
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(10, 38, dial, centre)'
+🃎  🂺  🃚  🂪  hidden🂡
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(11, 38, dial, centre)'
+🃎  🂻  🃛  🂫  🃋
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(12, 38, dial, centre)'
+🃎  🃝  🂽  🃍  hidden🂵
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); hour_after_playing_from_beginning_for_at_most(5, 39, dial, centre)'
+Could not play that far...
+TEST 25 END
+
+TEST 26 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(122); kings_at_end_of_game(dial, centre)'
+No success...
+TEST 26 END
+
+TEST 27 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(1, 52, dial, centre)'
+🃞  🂡  🂱  🃑  🃁
+TEST 27 END
+
+TEST 28 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(2, 52, dial, centre)'
+🃞  🂲  🃒  🃂  🂢
+TEST 28 END
+
+TEST 29 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(3, 52, dial, centre)'
+🃞  🂣  🃃  🃓  🂳
+TEST 29 END
+
+TEST 30 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(4, 52, dial, centre)'
+🃞  🃄  🂤  🃔  🂴
+TEST 30 END
+
+TEST 31 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(5, 52, dial, centre)'
+🃞  🂵  🂥  🃅  🃕
+TEST 31 END
+
+TEST 32 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(6, 52, dial, centre)'
+🃞  🂶  🂦  🃖  🃆
+TEST 32 END
+
+TEST 33 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(7, 52, dial, centre)'
+🃞  🃇  🃗  🂧  🂷
+TEST 33 END
+
+TEST 34 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(8, 52, dial, centre)'
+🃞  🂸  🂨  🃘  🃈
+TEST 34 END
+
+TEST 35 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(9, 52, dial, centre)'
+🃞  🂩  🃙  🃉  🂹
+TEST 35 END
+
+TEST 36 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(10, 52, dial, centre)'
+🃞  🂺  🃚  🂪  🃊
+TEST 36 END
+
+TEST 37 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(11, 52, dial, centre)'
+🃞  🂻  🃛  🃋  🂫
+TEST 37 END
+
+TEST 38 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(12, 52, dial, centre)'
+🃞  🃝  🂽  🂭  🃍
+TEST 38 END
+
+TEST 39 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); hour_after_playing_from_beginning_for_at_most(8, 100, dial, centre)'
+🂸  🂨  🃘  🃈
+TEST 39 END
+
+TEST 40 BEGIN
+$ python3 -c 'from patience import *; dial, centre = generate_dial_and_centre(182); kings_at_end_of_game(dial, centre)'
+🃞  🂾  🃎  🂮
+TEST 40 END
+

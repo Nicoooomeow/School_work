@@ -1,0 +1,1030 @@
+TEST 1 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_1.txt")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 39, in CheckOrder
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_2.txt")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 29, in CheckOrder
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_3.txt")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 31, in CheckOrder
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_4.txt")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 48, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_5.txt")'
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_6.txt")'
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_7.txt")'
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_8.txt")'
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_9.txt")'
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c 'from diff import *; DiffCommands("wrong_10.txt")'
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c 'from diff import *; diff_1 = DiffCommands("diff_1.txt"); print(diff_1)'
+1c1
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c 'from diff import *; diff_2 = DiffCommands("diff_2_1.txt"); print(diff_2)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 43, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c 'from diff import *; diff_3 = DiffCommands("diff_3_1.txt"); print(diff_3)'
+0a1
+1a3,5
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c 'from diff import *; diff_4 = DiffCommands("diff_4_1.txt"); print(diff_4)'
+1d0
+2a2
+4,5d3
+6a5
+7a7,10
+9d11
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c 'from diff import *; diff_5 = DiffCommands("diff_5_1.txt"); print(diff_5)'
+0a1
+3,4c4
+8,9d7
+11a10,11
+13,14c13,14
+16d15
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c 'from diff import *; diff_6 = DiffCommands("diff_6.txt"); print(diff_6)'
+1c1
+4c4
+8d7
+9a9
+10a11
+21,23c22,25
+34,35c36,37
+38d39
+43c44
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c 'from diff import *; diff_7 = DiffCommands("diff_7.txt"); print(diff_7)'
+22d21
+35a35
+38a39
+51d51
+56d55
+64d62
+67d64
+69d65
+72a69
+82d78
+87d82
+89d83
+94d87
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c 'from diff import *; diff_8 = DiffCommands("diff_8_1.txt"); print(diff_8)'
+1d0
+3d1
+10c8
+15a14
+17d15
+29a28
+39c38
+41d39
+51c49
+57,59c55
+60a57
+67c64
+71d67
+72a69
+73a71
+83c81
+87d84
+89d85
+94c90
+111c107
+112a109
+115d111
+117a114
+118a116
+120c118
+126c124
+128c126
+132c130
+151d148
+154a152
+158c156
+170c168
+175d172
+184c181
+187d183
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c 'from diff import *; diff_9 = DiffCommands("diff_9_1.txt"); print(diff_9)'
+3a4
+9c10
+19a21
+28a31
+30a34
+37d40
+38a42
+44a49
+58a64
+63a70
+69a77
+92c100
+93a102,103
+94a105,106
+96a109
+101a115
+102a117
+104a120,121
+106a124,125
+116a136
+120a141
+123a145
+124a147
+128a152
+139a164
+141a167
+159a186
+160a188
+170a199
+172,173c201
+190a219
+195a225
+196a227
+197a229
+203a236
+207a241
+210a245
+221a257
+227a264
+229a267
+237a276
+239a279
+241a282
+250a292
+252a295
+253a297
+259a304
+260a306,307
+265a313
+280a329
+285a335,337
+288a341
+290d342
+294c346,350
+298a355
+301a359
+302a361
+303a363
+314a375
+318a380,381
+319a383
+351d414
+368a432,433
+374a440
+375a442
+377a445
+380a449
+382a452
+384a455
+385a457
+401a474
+402a476,477
+409a485
+415a492
+416a494
+417a496
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c 'from diff import *; diff_10 = DiffCommands("diff_10_1.txt"); print(diff_10)'
+0a1,3
+1a5,6
+4d8
+6d9
+8d10
+9a12
+11d13
+13d14
+15d15
+16a17
+20c21
+21a23
+24c26
+25a28,29
+27c31
+30a35,36
+33,34c39
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c 'from diff import *; diff_1 = DiffCommands("diff_1.txt"); diff_1_a = DiffCommands("diff_1_a.txt"); diff_1_b = DiffCommands("diff_1_b.txt"); diff_1_c = DiffCommands("diff_1_c.txt"); pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt"); print(pair_of_files.is_a_possible_diff(diff_1) and not pair_of_files.is_a_possible_diff(diff_1_a) and not pair_of_files.is_a_possible_diff(diff_1_b) and not pair_of_files.is_a_possible_diff(diff_1_c))'
+True
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c 'from diff import *; diff_2_1 = DiffCommands("diff_2_1.txt"); diff_2_2 = DiffCommands("diff_2_2.txt"); diff_2_3 = DiffCommands("diff_2_3.txt"); diff_2_a = DiffCommands("diff_2_a.txt"); pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt"); print(pair_of_files.is_a_possible_diff(diff_2_1) and pair_of_files.is_a_possible_diff(diff_2_2) and pair_of_files.is_a_possible_diff(diff_2_3) and not pair_of_files.is_a_possible_diff(diff_2_a))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 43, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c 'from diff import *; diff_3_1 = DiffCommands("diff_3_1.txt"); diff_3_2 = DiffCommands("diff_3_2.txt"); diff_3_a = DiffCommands("diff_3_a.txt"); diff_3_b = DiffCommands("diff_3_b.txt"); pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt"); print(pair_of_files.is_a_possible_diff(diff_3_1) and pair_of_files.is_a_possible_diff(diff_3_2) and not pair_of_files.is_a_possible_diff(diff_3_a) and not pair_of_files.is_a_possible_diff(diff_3_b))'
+False
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c 'from diff import *; diff_4_1 = DiffCommands("diff_4_1.txt"); diff_4_2 = DiffCommands("diff_4_2.txt"); diff_4_a = DiffCommands("diff_4_a.txt"); diff_4_b = DiffCommands("diff_4_b.txt"); pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt"); print(pair_of_files.is_a_possible_diff(diff_4_1) and pair_of_files.is_a_possible_diff(diff_4_2) and not pair_of_files.is_a_possible_diff(diff_4_a) and not pair_of_files.is_a_possible_diff(diff_4_b))'
+False
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c 'from diff import *; diff_5_1 = DiffCommands("diff_5_1.txt"); diff_5_2 = DiffCommands("diff_5_2.txt"); diff_5_a = DiffCommands("diff_5_a.txt"); diff_5_b = DiffCommands("diff_5_b.txt"); pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt"); print(pair_of_files.is_a_possible_diff(diff_5_1) and pair_of_files.is_a_possible_diff(diff_5_2) and not pair_of_files.is_a_possible_diff(diff_5_a) and not pair_of_files.is_a_possible_diff(diff_5_b))'
+False
+TEST 25 END
+
+TEST 26 BEGIN
+$ python3 -c 'from diff import *; diff_6 = DiffCommands("diff_6.txt"); diff_6_a = DiffCommands("diff_6_a.txt"); diff_6_b = DiffCommands("diff_6_b.txt"); diff_6_c = DiffCommands("diff_6_c.txt"); pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt"); print(pair_of_files.is_a_possible_diff(diff_6) and not pair_of_files.is_a_possible_diff(diff_6_a) and not pair_of_files.is_a_possible_diff(diff_6_b) and not pair_of_files.is_a_possible_diff(diff_6_c))'
+False
+TEST 26 END
+
+TEST 27 BEGIN
+$ python3 -c 'from diff import *; diff_7 = DiffCommands("diff_7.txt"); diff_7_a = DiffCommands("diff_7_a.txt"); diff_7_b = DiffCommands("diff_7_b.txt"); diff_7_c = DiffCommands("diff_7_c.txt"); pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt"); print(pair_of_files.is_a_possible_diff(diff_7) and not pair_of_files.is_a_possible_diff(diff_7_a) and not pair_of_files.is_a_possible_diff(diff_7_b) and not pair_of_files.is_a_possible_diff(diff_7_c))'
+True
+TEST 27 END
+
+TEST 28 BEGIN
+$ python3 -c 'from diff import *; diff_8_1 = DiffCommands("diff_8_1.txt"); diff_8_2 = DiffCommands("diff_8_2.txt"); diff_8_a = DiffCommands("diff_8_a.txt"); diff_8_b = DiffCommands("diff_8_b.txt"); pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt"); print(pair_of_files.is_a_possible_diff(diff_8_1) and pair_of_files.is_a_possible_diff(diff_8_2) and not pair_of_files.is_a_possible_diff(diff_8_a) and not pair_of_files.is_a_possible_diff(diff_8_b))'
+False
+TEST 28 END
+
+TEST 29 BEGIN
+$ python3 -c 'from diff import *; diff_9_1 = DiffCommands("diff_9_1.txt"); diff_9_2 = DiffCommands("diff_9_2.txt"); diff_9_a = DiffCommands("diff_9_a.txt"); diff_9_b = DiffCommands("diff_9_b.txt"); pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt"); print(pair_of_files.is_a_possible_diff(diff_9_1) and pair_of_files.is_a_possible_diff(diff_9_2) and not pair_of_files.is_a_possible_diff(diff_9_a) and not pair_of_files.is_a_possible_diff(diff_9_b))'
+False
+TEST 29 END
+
+TEST 30 BEGIN
+$ python3 -c 'from diff import *; diff_10_1 = DiffCommands("diff_10_1.txt"); diff_10_2 = DiffCommands("diff_10_2.txt"); diff_10_a = DiffCommands("diff_10_a.txt"); diff_10_b = DiffCommands("diff_10_b.txt"); pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt"); print(pair_of_files.is_a_possible_diff(diff_10_1) and pair_of_files.is_a_possible_diff(diff_10_2) and not pair_of_files.is_a_possible_diff(diff_10_a) and not pair_of_files.is_a_possible_diff(diff_10_b))'
+False
+TEST 30 END
+
+TEST 31 BEGIN
+$ python3 -c 'from diff import *; diff_1 = DiffCommands("diff_1.txt"); pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt"); pair_of_files.output_diff(diff_1)'
+1c1
+< A single line
+---
+> Another single line
+TEST 31 END
+
+TEST 32 BEGIN
+$ python3 -c 'from diff import *; diff_2 = DiffCommands("diff_2_1.txt"); pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt"); pair_of_files.output_diff(diff_2)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 43, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 32 END
+
+TEST 33 BEGIN
+$ python3 -c 'from diff import *; diff_3 = DiffCommands("diff_3_1.txt"); pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt"); pair_of_files.output_diff(diff_3)'
+TEST 33 END
+
+TEST 34 BEGIN
+$ python3 -c 'from diff import *; diff_4 = DiffCommands("diff_4_1.txt"); pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt"); pair_of_files.output_diff(diff_4)'
+TEST 34 END
+
+TEST 35 BEGIN
+$ python3 -c 'from diff import *; diff_5 = DiffCommands("diff_5_1.txt"); pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt"); pair_of_files.output_diff(diff_5)'
+TEST 35 END
+
+TEST 36 BEGIN
+$ python3 -c 'from diff import *; diff_6 = DiffCommands("diff_6.txt"); pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt"); pair_of_files.output_diff(diff_6)'
+TEST 36 END
+
+TEST 37 BEGIN
+$ python3 -c 'from diff import *; diff_7 = DiffCommands("diff_7.txt"); pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt"); pair_of_files.output_diff(diff_7)'
+22d21
+< Science has not yet taught us 193 if madness is or is not the sublimity of the intelligence.
+35a35
+> Science has not yet taught us 72 if madness is or is not the sublimity of the intelligence.
+38a39
+> Science has not yet taught us 116 if madness is or is not the sublimity of the intelligence.
+51d51
+< Science has not yet taught us 85 if madness is or is not the sublimity of the intelligence.
+56d55
+< Science has not yet taught us 111 if madness is or is not the sublimity of the intelligence.
+64d62
+< Science has not yet taught us 90 if madness is or is not the sublimity of the intelligence.
+67d64
+< Science has not yet taught us 198 if madness is or is not the sublimity of the intelligence.
+69d65
+< Science has not yet taught us 119 if madness is or is not the sublimity of the intelligence.
+72a69
+> Science has not yet taught us 112 if madness is or is not the sublimity of the intelligence.
+82d78
+< Science has not yet taught us 185 if madness is or is not the sublimity of the intelligence.
+87d82
+< Science has not yet taught us 129 if madness is or is not the sublimity of the intelligence.
+89d83
+< Science has not yet taught us 134 if madness is or is not the sublimity of the intelligence.
+94d87
+< Science has not yet taught us 89 if madness is or is not the sublimity of the intelligence.
+TEST 37 END
+
+TEST 38 BEGIN
+$ python3 -c 'from diff import *; diff_8 = DiffCommands("diff_8_1.txt"); pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt"); pair_of_files.output_diff(diff_8)'
+TEST 38 END
+
+TEST 39 BEGIN
+$ python3 -c 'from diff import *; diff_9 = DiffCommands("diff_9_1.txt"); pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt"); pair_of_files.output_diff(diff_9)'
+TEST 39 END
+
+TEST 40 BEGIN
+$ python3 -c 'from diff import *; diff_10 = DiffCommands("diff_10_1.txt"); pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt"); pair_of_files.output_diff(diff_10)'
+TEST 40 END
+
+TEST 41 BEGIN
+$ python3 -c 'from diff import *; diff_1 = DiffCommands("diff_1.txt"); pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt"); pair_of_files.output_unmodified_from_original(diff_1)'
+...
+TEST 41 END
+
+TEST 42 BEGIN
+$ python3 -c 'from diff import *; diff_2 = DiffCommands("diff_2_1.txt"); pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt"); pair_of_files.output_unmodified_from_original(diff_2)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 43, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 42 END
+
+TEST 43 BEGIN
+$ python3 -c 'from diff import *; diff_3 = DiffCommands("diff_3_1.txt"); pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt"); pair_of_files.output_unmodified_from_original(diff_3)'
+TEST 43 END
+
+TEST 44 BEGIN
+$ python3 -c 'from diff import *; diff_4 = DiffCommands("diff_4_1.txt"); pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt"); pair_of_files.output_unmodified_from_original(diff_4)'
+TEST 44 END
+
+TEST 45 BEGIN
+$ python3 -c 'from diff import *; diff_5 = DiffCommands("diff_5_1.txt"); pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt"); pair_of_files.output_unmodified_from_original(diff_5)'
+TEST 45 END
+
+TEST 46 BEGIN
+$ python3 -c 'from diff import *; diff_6 = DiffCommands("diff_6.txt"); pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt"); pair_of_files.output_unmodified_from_original(diff_6)'
+TEST 46 END
+
+TEST 47 BEGIN
+$ python3 -c 'from diff import *; diff_7 = DiffCommands("diff_7.txt"); pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt"); pair_of_files.output_unmodified_from_original(diff_7)'
+Science has not yet taught us 102 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 81 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 91 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 173 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 76 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 185 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 164 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 136 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 110 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 57 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 54 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 80 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 33 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 148 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 166 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 83 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 142 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 71 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 107 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 108 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 32 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 77 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 34 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 192 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 0 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 189 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 117 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 153 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 20 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 4 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 172 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 48 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 39 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 105 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 180 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 100 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 6 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 22 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 174 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 99 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 25 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 50 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 107 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 110 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 96 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 181 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 140 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 33 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 148 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 105 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 72 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 10 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 147 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 23 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 5 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 144 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 48 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 170 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 3 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 196 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 3 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 166 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 79 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 31 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 81 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 57 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 175 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 20 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 179 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 191 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 109 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 69 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 90 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 160 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 117 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 180 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 156 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 192 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 22 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 36 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 76 if madness is or is not the sublimity of the intelligence.
+TEST 47 END
+
+TEST 48 BEGIN
+$ python3 -c 'from diff import *; diff_8 = DiffCommands("diff_8_1.txt"); pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt"); pair_of_files.output_unmodified_from_original(diff_8)'
+TEST 48 END
+
+TEST 49 BEGIN
+$ python3 -c 'from diff import *; diff_9 = DiffCommands("diff_9_1.txt"); pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt"); pair_of_files.output_unmodified_from_original(diff_9)'
+TEST 49 END
+
+TEST 50 BEGIN
+$ python3 -c 'from diff import *; diff_10 = DiffCommands("diff_10_1.txt"); pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt"); pair_of_files.output_unmodified_from_original(diff_10)'
+TEST 50 END
+
+TEST 51 BEGIN
+$ python3 -c 'from diff import *; diff_1 = DiffCommands("diff_1.txt"); pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt"); pair_of_files.output_unmodified_from_new(diff_1)'
+...
+TEST 51 END
+
+TEST 52 BEGIN
+$ python3 -c 'from diff import *; diff_2 = DiffCommands("diff_2_1.txt"); pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt"); pair_of_files.output_unmodified_from_new(diff_2)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 12, in __init__
+    DiffCommands.CheckOrder(self, file_name)  # 检查是不是正确的命令
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 33, in CheckOrder
+    DiffCommands.delete_order(self, line)
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 43, in delete_order
+    raise DiffCommandsError(self.error_output)
+diff.DiffCommandsError: Cannot possibly be the commands for the diff of two files
+TEST 52 END
+
+TEST 53 BEGIN
+$ python3 -c 'from diff import *; diff_3 = DiffCommands("diff_3_1.txt"); pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt"); pair_of_files.output_unmodified_from_new(diff_3)'
+TEST 53 END
+
+TEST 54 BEGIN
+$ python3 -c 'from diff import *; diff_4 = DiffCommands("diff_4_1.txt"); pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt"); pair_of_files.output_unmodified_from_new(diff_4)'
+TEST 54 END
+
+TEST 55 BEGIN
+$ python3 -c 'from diff import *; diff_5 = DiffCommands("diff_5_1.txt"); pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt"); pair_of_files.output_unmodified_from_new(diff_5)'
+TEST 55 END
+
+TEST 56 BEGIN
+$ python3 -c 'from diff import *; diff_6 = DiffCommands("diff_6.txt"); pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt"); pair_of_files.output_unmodified_from_new(diff_6)'
+TEST 56 END
+
+TEST 57 BEGIN
+$ python3 -c 'from diff import *; diff_7 = DiffCommands("diff_7.txt"); pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt"); pair_of_files.output_unmodified_from_new(diff_7)'
+Science has not yet taught us 102 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 81 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 91 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 173 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 76 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 185 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 164 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 136 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 110 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 57 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 54 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 80 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 33 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 148 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 166 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 83 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 142 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 71 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 107 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 108 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 32 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 77 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 34 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 192 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 0 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 189 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 117 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 153 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 20 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 4 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 172 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 48 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 39 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 105 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 180 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 100 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 6 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 22 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 174 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 99 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 25 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 50 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 107 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 110 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 96 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 181 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 140 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 33 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 148 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 105 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 72 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 10 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 147 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 23 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 5 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 144 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 48 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 170 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 3 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 196 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 3 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 166 if madness is or is not the sublimity of the intelligence.
+...
+Science has not yet taught us 79 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 31 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 113 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 81 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 57 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 175 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 20 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 179 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 191 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 109 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 69 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 90 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 160 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 117 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 180 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 156 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 192 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 22 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 36 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 58 if madness is or is not the sublimity of the intelligence.
+Science has not yet taught us 76 if madness is or is not the sublimity of the intelligence.
+TEST 57 END
+
+TEST 58 BEGIN
+$ python3 -c 'from diff import *; diff_8 = DiffCommands("diff_8_1.txt"); pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt"); pair_of_files.output_unmodified_from_new(diff_8)'
+TEST 58 END
+
+TEST 59 BEGIN
+$ python3 -c 'from diff import *; diff_9 = DiffCommands("diff_9_1.txt"); pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt"); pair_of_files.output_unmodified_from_new(diff_9)'
+TEST 59 END
+
+TEST 60 BEGIN
+$ python3 -c 'from diff import *; diff_10 = DiffCommands("diff_10_1.txt"); pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt"); pair_of_files.output_unmodified_from_new(diff_10)'
+TEST 60 END
+
+TEST 61 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 355, in get_all_diff_commands
+    max_value = points[-1][-1]
+IndexError: list index out of range
+TEST 61 END
+
+TEST 62 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 62 END
+
+TEST 63 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+2
+TEST 63 END
+
+TEST 64 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+31
+TEST 64 END
+
+TEST 65 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+12
+TEST 65 END
+
+TEST 66 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 66 END
+
+TEST 67 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 67 END
+
+TEST 68 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 68 END
+
+TEST 69 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 69 END
+
+TEST 70 BEGIN
+$ python3 -c 'from diff import *; pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt"); diffs = pair_of_files.get_all_diff_commands(); print(len(diffs))'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 70 END
+
+TEST 71 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_1_1.txt", "file_1_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Assignments/Assignment 2/Submissions/xuan.wei@student.unsw.edu.au/diff.py", line 355, in get_all_diff_commands
+    max_value = points[-1][-1]
+IndexError: list index out of range
+TEST 71 END
+
+TEST 72 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_2_1.txt", "file_2_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 72 END
+
+TEST 73 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_3_1.txt", "file_3_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+0a1
+1a3,5
+0a1,3
+1a5
+TEST 73 END
+
+TEST 74 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_4_1.txt", "file_4_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+0a1,7
+1a9,10
+3,9d11
+0a1,7
+2,7c9,10
+9d11
+1,2c1,2
+3a4,6
+5,9c8,11
+1,2c1,2
+4,5d3
+7,9c5,11
+1,2c1,2
+4,6c4,5
+8,9c7,11
+1,2c1,2
+4,7c4,10
+9d11
+1,2c1,2
+4c4
+6,9c6,11
+1,2c1,5
+4,7c7,10
+9d11
+1,2c1,5
+5,9c8,11
+1,2c1,5
+8,9c7,11
+1,3c1,6
+5,7c8,10
+9d11
+1,4c1,4
+6,7c6,10
+9d11
+1,4c1,4
+6d5
+8,9c7,11
+1,5c1,3
+6a5
+8,9c7,11
+1,5c1,3
+7c5,10
+9d11
+1,6c1,2
+7a4,10
+9d11
+1,6c1,2
+8,9c7,11
+1,6c1,5
+7a7,10
+9d11
+1,7d0
+9a3,11
+1,7d0
+9d11
+1c1,10
+9d11
+1d0
+2a2
+4,9c4,11
+1d0
+2a2,5
+4,9c7,11
+1d0
+3,4c2,4
+6,9c6,11
+1d0
+3,5c2,3
+7,9c5,11
+1d0
+3,6c2
+8,9c4,11
+1d0
+3,6c2,5
+8,9c7,11
+1d0
+3,7c2,10
+9d11
+1d0
+3,8d1
+9a3,11
+1d0
+3,9d11
+1d0
+3c2,6
+5,9c8,11
+TEST 74 END
+
+TEST 75 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_5_1.txt", "file_5_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+0a1
+3,4c4
+5a6
+8,9d7
+11a10,11
+13,14c13,14
+16d15
+0a1
+3,4c4
+5a6
+8,9d7
+12,14c10
+16d15
+0a1
+3,4c4
+5a6
+8,9d7
+12,14d9
+16d15
+0a1
+3,4c4
+5a6
+8,9d7
+12c10,11
+14c13,14
+16d15
+0a1
+3,4c4
+6d5
+8,9d7
+11a10,11
+13,14c13,14
+16d15
+0a1
+3,4c4
+6d5
+8,9d7
+12,14c10
+16d15
+0a1
+3,4c4
+6d5
+8,9d7
+12,14d9
+16d15
+0a1
+3,4c4
+6d5
+8,9d7
+12c10,11
+14c13,14
+16d15
+0a1
+3,4c4
+8,9d7
+11a10,11
+13,14c13,14
+16d15
+0a1
+3,4c4
+8,9d7
+12,14c10
+16d15
+0a1
+3,4c4
+8,9d7
+12,14d9
+16d15
+0a1
+3,4c4
+8,9d7
+12c10,11
+14c13,14
+16d15
+TEST 75 END
+
+TEST 76 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_6_1.txt", "file_6_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 76 END
+
+TEST 77 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_7_1.txt", "file_7_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 77 END
+
+TEST 78 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_8_1.txt", "file_8_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 78 END
+
+TEST 79 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_9_1.txt", "file_9_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 79 END
+
+TEST 80 BEGIN
+$ python3 -c 'from diff import *
+pair_of_files = OriginalNewFiles("file_10_1.txt", "file_10_2.txt")
+diffs = pair_of_files.get_all_diff_commands()
+print(sum(len(str(diffs[i])) for i in range(len(diffs))))
+for i in range(len(diffs)):
+    print(diffs[i])'
+PROGRAM KILLED
+MAX RUNNING TIME EXCEEDED
+TEST 80 END
+
