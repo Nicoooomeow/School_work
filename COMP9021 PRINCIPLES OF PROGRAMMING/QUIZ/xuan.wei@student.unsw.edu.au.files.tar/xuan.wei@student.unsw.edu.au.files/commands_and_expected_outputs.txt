@@ -1,0 +1,319 @@
+TEST 1 BEGIN
+$ echo 78 1 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 78 1
+Here are the generated values: [2]
+
+The difference between last and first values is:
+   0
+
+Here are the values represented as horizontal bars:
+
+     *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----
+   | * |
+   | * |
+   -----
+
+TEST 1 END
+
+TEST 2 BEGIN
+$ echo 89 2 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 89 2
+Here are the generated values: [1, 5]
+
+The difference between last and first values is:
+   4
+
+Here are the values represented as horizontal bars:
+
+     * 
+     *  *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   --------
+   |    * |
+   |    * |
+   |    * |
+   |    * |
+   | *  * |
+   --------
+
+TEST 2 END
+
+TEST 3 BEGIN
+$ echo 100 3 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 100 3
+Here are the generated values: [2, 4, 4]
+
+The difference between last and first values is:
+   2
+
+Here are the values represented as horizontal bars:
+
+     *  * 
+     *  *  *  * 
+     *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----------
+   |    *  * |
+   |    *  * |
+   | *  *  * |
+   | *  *  * |
+   -----------
+
+TEST 3 END
+
+TEST 4 BEGIN
+$ echo 111 4 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 111 4
+Here are the generated values: [2, 3, 4, 2]
+
+The difference between last and first values is:
+   0
+
+Here are the values represented as horizontal bars:
+
+     *  * 
+     *  *  * 
+     *  *  *  * 
+     *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   --------------
+   |       *    |
+   |    *  *    |
+   | *  *  *  * |
+   | *  *  *  * |
+   --------------
+
+TEST 4 END
+
+TEST 5 BEGIN
+$ echo 122 5 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 122 5
+Here are the generated values: [5, 2, 5, 3, 1]
+
+The difference between last and first values is:
+   -4
+
+Here are the values represented as horizontal bars:
+
+     *  *  *  *  * 
+     *  * 
+     *  *  *  *  * 
+     *  *  * 
+     * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----------------
+   | *     *       |
+   | *     *       |
+   | *     *  *    |
+   | *  *  *  *    |
+   | *  *  *  *  * |
+   -----------------
+
+TEST 5 END
+
+TEST 6 BEGIN
+$ echo 133 7 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 133 7
+Here are the generated values: [4, 3, 4, 3, 5, 3, 5]
+
+The difference between last and first values is:
+   1
+
+Here are the values represented as horizontal bars:
+
+     *  *  *  * 
+     *  *  * 
+     *  *  *  * 
+     *  *  * 
+     *  *  *  *  * 
+     *  *  * 
+     *  *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----------------------
+   |             *     * |
+   | *     *     *     * |
+   | *  *  *  *  *  *  * |
+   | *  *  *  *  *  *  * |
+   | *  *  *  *  *  *  * |
+   -----------------------
+
+TEST 6 END
+
+TEST 7 BEGIN
+$ echo 144 10 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 144 10
+Here are the generated values: [4, 1, 4, 1, 6, 2, 4, 1, 6, 4]
+
+The difference between last and first values is:
+   0
+
+Here are the values represented as horizontal bars:
+
+     *  *  *  * 
+     * 
+     *  *  *  * 
+     * 
+     *  *  *  *  *  * 
+     *  * 
+     *  *  *  * 
+     * 
+     *  *  *  *  *  * 
+     *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   --------------------------------
+   |             *           *    |
+   |             *           *    |
+   | *     *     *     *     *  * |
+   | *     *     *     *     *  * |
+   | *     *     *  *  *     *  * |
+   | *  *  *  *  *  *  *  *  *  * |
+   --------------------------------
+
+TEST 7 END
+
+TEST 8 BEGIN
+$ echo 155 14 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 155 14
+Here are the generated values: [5, 5, 5, 3, 6, 4, 5, 5, 4, 5, 3, 2, 6, 1]
+
+The difference between last and first values is:
+   -4
+
+Here are the values represented as horizontal bars:
+
+     *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  * 
+     *  *  *  *  *  * 
+     *  *  *  * 
+     *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  *  * 
+     *  *  *  *  * 
+     *  *  * 
+     *  * 
+     *  *  *  *  *  * 
+     * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   --------------------------------------------
+   |             *                       *    |
+   | *  *  *     *     *  *     *        *    |
+   | *  *  *     *  *  *  *  *  *        *    |
+   | *  *  *  *  *  *  *  *  *  *  *     *    |
+   | *  *  *  *  *  *  *  *  *  *  *  *  *    |
+   | *  *  *  *  *  *  *  *  *  *  *  *  *  * |
+   --------------------------------------------
+
+TEST 8 END
+
+TEST 9 BEGIN
+$ echo 166 19 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 166 19
+Here are the generated values: [2, 6, 5, 4, 4, 1, 3, 1, 4, 6, 5, 3, 3, 6, 2, 2, 6, 1, 4]
+
+The difference between last and first values is:
+   2
+
+Here are the values represented as horizontal bars:
+
+     *  * 
+     *  *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  *  * 
+     *  *  *  * 
+     * 
+     *  *  * 
+     * 
+     *  *  *  * 
+     *  *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  * 
+     *  *  * 
+     *  *  *  *  *  * 
+     *  * 
+     *  * 
+     *  *  *  *  *  * 
+     * 
+     *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----------------------------------------------------------
+   |    *                       *           *        *       |
+   |    *  *                    *  *        *        *       |
+   |    *  *  *  *           *  *  *        *        *     * |
+   |    *  *  *  *     *     *  *  *  *  *  *        *     * |
+   | *  *  *  *  *     *     *  *  *  *  *  *  *  *  *     * |
+   | *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * |
+   -----------------------------------------------------------
+
+TEST 9 END
+
+TEST 10 BEGIN
+$ echo 177 25 | python3 quiz_1.py
+Enter two integers, the second one being strictly positive: 177 25
+Here are the generated values: [2, 4, 4, 5, 2, 6, 4, 1, 4, 6, 5, 6, 3, 6, 3, 1, 1, 1, 5, 6, 3, 4, 3, 5, 4]
+
+The difference between last and first values is:
+   2
+
+Here are the values represented as horizontal bars:
+
+     *  * 
+     *  *  *  * 
+     *  *  *  * 
+     *  *  *  *  * 
+     *  * 
+     *  *  *  *  *  * 
+     *  *  *  * 
+     * 
+     *  *  *  * 
+     *  *  *  *  *  * 
+     *  *  *  *  * 
+     *  *  *  *  *  * 
+     *  *  * 
+     *  *  *  *  *  * 
+     *  *  * 
+     * 
+     * 
+     * 
+     *  *  *  *  * 
+     *  *  *  *  *  * 
+     *  *  * 
+     *  *  *  * 
+     *  *  * 
+     *  *  *  *  * 
+     *  *  *  * 
+
+Here are the values represented as vertical bars, with a surrounding frame:
+
+   -----------------------------------------------------------------------------
+   |                *           *     *     *                 *                |
+   |          *     *           *  *  *     *              *  *           *    |
+   |    *  *  *     *  *     *  *  *  *     *              *  *     *     *  * |
+   |    *  *  *     *  *     *  *  *  *  *  *  *           *  *  *  *  *  *  * |
+   | *  *  *  *  *  *  *     *  *  *  *  *  *  *           *  *  *  *  *  *  * |
+   | *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * |
+   -----------------------------------------------------------------------------
+
+TEST 10 END
+

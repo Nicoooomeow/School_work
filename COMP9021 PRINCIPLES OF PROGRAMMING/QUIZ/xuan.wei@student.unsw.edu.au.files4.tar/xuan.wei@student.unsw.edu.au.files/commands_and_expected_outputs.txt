@@ -1,0 +1,125 @@
+TEST 1 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(0) and not is_good_prime(103) and not is_good_prime(809) and is_good_prime(2647))"
+True
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(1) and not is_good_prime(2311) and not is_good_prime(2111) and is_good_prime(4357))"
+True
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(9697) and not is_good_prime(9067) and not is_good_prime(14143) and is_good_prime(16273))"
+True
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(1239) and not is_good_prime(9067) and not is_good_prime(16739) and is_good_prime(35897))"
+True
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(38617) and not is_good_prime(39869) and not is_good_prime(41609) and is_good_prime(45317))"
+True
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(91037) and not is_good_prime(91231) and not is_good_prime(91239) and is_good_prime(91237))"
+True
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(213407) and not is_good_prime(713467) and not is_good_prime(213421) and is_good_prime(213467))"
+True
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(712485) and not is_good_prime(712482) and not is_good_prime(412483) and is_good_prime(712483))"
+True
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(1234659) and not is_good_prime(1034657) and not is_good_prime(1234637) and is_good_prime(1234657))"
+True
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c "from quiz_4 import *; print(not is_good_prime(8123697) and not is_good_prime(8123297) and not is_good_prime(8523597) and is_good_prime(8123597))"
+True
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('_'))"
+2
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('9_'))"
+97
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('__1'))"
+241
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('12_'))"
+127
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('____'))"
+1237
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('3_4_'))"
+3541
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('__8__'))"
+12853
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('_1_9_'))"
+21397
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('8_7___'))"
+817463
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('_123_7'))"
+412387
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('_3856_'))"
+138569
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('1_2_3_7'))"
+1425367
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('1__6__7'))"
+1236857
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('__4_5__'))"
+1243579
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c "from quiz_4 import *; print(smallest_good_prime('9__8_7_'))"
+9148673
+TEST 25 END
+

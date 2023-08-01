@@ -1,0 +1,150 @@
+TEST 1 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(436); print(can_be_built_from_with_value('FORECATLE', 'FORECASTLE', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+-1
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(437); print(can_be_built_from_with_value('FRUITIONS', 'FRUITIONS', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+-1
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(438); print(can_be_built_from_with_value('GABRIELLE', 'GABRIELE', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+0
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(439); print(can_be_built_from_with_value('GINGERLY', 'GINGARLY', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+0
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(440); print(can_be_built_from_with_value('HAMILTONIAN', 'NILTIAOHAMN', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+44
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(441); print(can_be_built_from_with_value('HAPSBURG', 'SABRSHPPUG', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+37
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(442); print(can_be_built_from_with_value('HEBRAICIZES', 'SAEICAHBIZEBUR', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+65
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(444); print(can_be_built_from_with_value('HIPPOPOTAMUS', 'ZSTOPOIWASUHPPMI', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+60
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(445); print(can_be_built_from_with_value('INDOEUROPEAN', 'EPEUDOINORNA EPEUDOINORNA', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+71
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(446); print(can_be_built_from_with_value('ZOROASTRIAN', 'OTBSRRZOONSAAIMQ', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+59
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(447); print(most_valuable_solutions('ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['NONBIODEGRADABLE']
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(448); print(most_valuable_solutions('PBAREIOUCUOIEADQ', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['APERIODIC']
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(449); print(most_valuable_solutions('MAIEUMISTICNOR', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['MINIATURES']
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(450); print(most_valuable_solutions('JEUJKSDUEFJKIOHJSAC', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['FOCUSSED', 'KODIAK']
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(451); print(most_valuable_solutions('IUOUITIUWUYIOIJEFJIVIIOSFFUNBVNOIW', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['INFINITIVES']
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(452); print(most_valuable_solutions('OFLW', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['FLOW', 'FOWL', 'WOLF']
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(453); print(most_valuable_solutions('QAZWSXEDCRFV', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['CARVED', 'CRAVED', 'FACED']
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(454); print(most_valuable_solutions('AHAPPYEND', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['DAPHNE', 'HAYDEN']
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(455); print(most_valuable_solutions('BEHEREANDTHERE', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['BARTENDER', 'REENTERED']
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(456); print(most_valuable_solutions('RIGHTWRONGMAYBE', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['EARTHWORM', 'MIGRATORY']
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(457); print(most_valuable_solutions('YOUKNOWTHIS', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['HOUSTON', 'KNOWS']
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(458); print(most_valuable_solutions('STILLANOTHERTEST', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['EARTHLINESS', 'LITERALNESS']
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(459); print(most_valuable_solutions('ONETWOTHREEFOURFIVE', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['FORFEITURE', 'HERETOFORE']
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(460); print(most_valuable_solutions('SIVISPACEMPARABELLUM', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['IMPRESSIBLE', 'PERMISSIBLE']
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c "from quiz_3 import *; values = give_values_to_letters(461); print(most_valuable_solutions('DEUSNOBISHAECOTIAFECIT', values))"
+A is worth 7, B is worth 7, C is worth 1, D is worth 5, E is worth 9, F is worth 8, G is worth 7, H is worth 5, I is worth 8, J is worth 6, K is worth 4, L is worth 9, M is worth 3, N is worth 5, O is worth 3, P is worth 2, Q is worth 5, R is worth 9, S is worth 3, T is worth 5, U is worth 2, V is worth 2, W is worth 6, X is worth 8, Y is worth 9,Z is worth 2
+['BEAUTIFICATIONS', 'CODIFICATIONS']
+TEST 25 END
+

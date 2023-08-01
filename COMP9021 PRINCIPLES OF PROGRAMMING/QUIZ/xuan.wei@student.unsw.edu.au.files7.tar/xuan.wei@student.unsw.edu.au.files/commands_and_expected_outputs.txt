@@ -1,0 +1,113 @@
+TEST 1 BEGIN
+$ python3 -c 'from quiz_7 import *; Point(1) '
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 30, in __init__
+    raise PointError('Cannot create point.')
+quiz_7.PointError: Cannot create point.
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c 'from quiz_7 import *; NonVerticalLine(point_1=Point(), point_2=Point(0, 0))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 46, in __init__
+    raise NonVerticalLineError('Cannot create nonvertical line.')
+quiz_7.NonVerticalLineError: Cannot create nonvertical line.
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c 'from quiz_7 import *; NonVerticalLine(Point(1, 2), Point(3, 4))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+TypeError: __init__() takes 1 positional argument but 3 were given
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c 'from quiz_7 import *; NonVerticalLine(point_1=Point())'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 46, in __init__
+    raise NonVerticalLineError('Cannot create nonvertical line.')
+quiz_7.NonVerticalLineError: Cannot create nonvertical line.
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c 'from quiz_7 import *; NonVerticalLine(Point(), point_2=Point(3, 5))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+TypeError: __init__() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(3,5); p2 = Point(3,5); line = NonVerticalLine(point_1 = p1, point_2 = p2) '
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 46, in __init__
+    raise NonVerticalLineError('Cannot create nonvertical line.')
+quiz_7.NonVerticalLineError: Cannot create nonvertical line.
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(3,5); p2 = Point(5,3); line = NonVerticalLine(point_1 = p1, point_2 = p2); print(line.slope); print(line.intercept)'
+-1.0
+8.0
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(3,5); p2 = Point(3,-3); line = NonVerticalLine(point_1 = p1, point_2 = p2)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 46, in __init__
+    raise NonVerticalLineError('Cannot create nonvertical line.')
+quiz_7.NonVerticalLineError: Cannot create nonvertical line.
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); p3 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); line.change_point_or_points(point_1 = p3)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 50, in change_point_or_points
+    raise NonVerticalLineError('Cannot perform this change.')
+quiz_7.NonVerticalLineError: Cannot perform this change.
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); p3 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); line.change_point_or_points(point_2 = p3); print(line.slope); print(line.intercept)'
+-2.3333333333333335
+18.333333333333336
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); line.change_point_or_points(point_1 = p2, point_2 = p1); print(line.slope); print(line.intercept)'
+-2.3333333333333335
+18.333333333333336
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); p3 = Point(1,11); p4 = Point(6,2); line.change_point_or_points(point_2 = p3, point_1 = p4); print(line.slope); print(line.intercept)'
+-1.8
+12.8
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); line.change_point_or_points(); print(line.slope); print(line.intercept)'
+-2.3333333333333335
+18.333333333333336
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); p3 = Point(1,11); line.change_point_or_points(point_1 = p3); print(line.slope); print(line.intercept)'
+-0.6666666666666666
+11.666666666666666
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c 'from quiz_7 import *; p1 = Point(7,2); p2 = Point(4,9); line = NonVerticalLine(point_1 = p1, point_2 = p2); p3 = Point(7,-11); line.change_point_or_points(point_2 = p3)'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/ericmartin/Documents/COMP9021/Quizzes/Quiz_7/Submissions/eric.martin@unsw.edu.au/quiz_7.py", line 50, in change_point_or_points
+    raise NonVerticalLineError('Cannot perform this change.')
+quiz_7.NonVerticalLineError: Cannot perform this change.
+TEST 15 END
+
